@@ -28,7 +28,8 @@ export const App = createClass({
         })
     },
     countDays(filter){
-        const {allSkiDays} = this.state
+        const {allSkiDays} = this.state;
+        console.log(allSkiDays)
         return  allSkiDays.filter(
             (day)=>(filter)?day[filter]:day).length
     },
